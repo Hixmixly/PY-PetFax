@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pets Index</title>
+</head>
+<body>
+    <h1>Our Pets Available for Adoption</h1>
+    <ul>
+        {% for pet in pets %}
+        <li>
+          <a href="/pets/{{ loop.index0 }}">
+            {{ pet.name }}
+            <img src="{{ url_for('static', filename=pet.image) }}" alt="{{ pet.name }}" style="width: 100px;">
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      
+</body>
+</html>
