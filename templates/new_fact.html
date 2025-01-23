@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit a Fun Fact</title>
+</head>
+<body>
+    <h1>Submit a Fun Fact</h1>
+    <form action="/facts" method="POST">
+        <label for="submitter">Your Name:</label>
+        <input type="text" id="submitter" name="submitter" required>
+        
+        <label for="fact">Fun Fact:</label>
+        <textarea id="fact" name="fact" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/pets">Back to all pets</a>
+</body>
+</html>
